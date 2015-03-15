@@ -2,14 +2,14 @@ set nocompatible
 call pathogen#infect()
 call togglebg#map("<F5>")
 
-" Display op:
+" Display Option
 set title
 set number
 set ruler
 set wrap
 set scrolloff=3
 
-" Search Opi
+" Search Options
 set ignorecase
 set smartcase
 set incsearch
