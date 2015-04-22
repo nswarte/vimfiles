@@ -13,7 +13,7 @@ set scrolloff=3
 set ignorecase
 set smartcase
 set incsearch
-set hlsearch
+set nohlsearch
 
 " Bell
 set visualbell
