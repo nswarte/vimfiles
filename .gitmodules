@@ -7,3 +7,9 @@
 [submodule "bundle/vim-jdaddy"]
 	path = bundle/vim-jdaddy
 	url = https://github.com/tpope/vim-jdaddy
+[submodule "vim-tfs"]
+	path = vim-tfs
+	url = https://github.com/nswarte/vim-tfs
+[submodule "bundle/vim-tfs"]
+	path = bundle/vim-tfs
+	url = https://github.com/nswarte/vim-tfs
