@@ -41,8 +41,6 @@ nnoremap <leader><c-u> viwUe
 " Mapping for toggling nerdTree
 :imap <C-n> :NERDTreeToggle<CR>
 :map <C-n> :NERDTreeToggle<CR>
-:map - ddp
-:map _ ddkP
 
 " Mapping for editing vimrc
 :nnoremap <leader>ev :vsplit $MYVIMRC<cr>
