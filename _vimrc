@@ -28,6 +28,8 @@ set hidden
 
 :imap <C-n> :NERDTreeToggle<CR>
 :map <C-n> :NERDTreeToggle<CR>
+:map - ddp
+:map _ ddkP
 
 " Syntax Coloration
 syntax enable
