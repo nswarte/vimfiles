@@ -1,3 +1,7 @@
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
 set nocompatible
 call pathogen#infect()
 call togglebg#map("<F5>")
@@ -8,6 +12,7 @@ set number
 set ruler
 set wrap
 set scrolloff=3
+set rnu
 
 " Search Options
 set ignorecase
@@ -23,13 +28,25 @@ set backspace=indent,eol,start
 set hidden
 
 " Mappings
+:let mapleader=","
+
+" Mappings for escaping insert and visual mode
 :imap ;; <Esc>
 :map ;; <Esc>
 
+" Mapping for upper case of word in insert mode and normal mode
+inoremap <leader><c-u> <Esc>viwUea
+nnoremap <leader><c-u> viwUe
+
+" Mapping for toggling nerdTree
 :imap <C-n> :NERDTreeToggle<CR>
 :map <C-n> :NERDTreeToggle<CR>
 :map - ddp
 :map _ ddkP
+
+" Mapping for editing vimrc
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+:nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Syntax Coloration
 syntax enable
@@ -44,9 +61,6 @@ colorscheme solarized
 set guifont=Consolas:h10
 set antialias
 
-source $VIMRUNTIME/vimrc_example.vim
-source $VIMRUNTIME/mswin.vim
-behave mswin
 
 set diffexpr=MyDiff()
 function MyDiff()
